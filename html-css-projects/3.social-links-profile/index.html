@@ -2,33 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @font-face {
+      font-family: "Inter";
+      src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Inter";
+      src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Inter";
+      src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: hsl(0, 0%, 8%);
+      color: hsl(0, 0%, 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container{
+      background-color:hsl(0, 0%, 12%);
+      width: fit-content;
+      justify-items: center;
+      border-radius: 10px;
+      padding: 40px;
+    }
+
+    #info-div{
+      text-align: center;
+    }
+
+    #button-div{
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      gap: 15px;
+    }
+
+    button {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      color: white;
+      background-color: hsl(0, 0%, 20%);
+      border: none;
+      border-radius: 5px;
+      padding: 12px 80px
+    }
+
+    #name{
+      margin: 10px 0px;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    #place{
+      margin-top:0px;
+      margin-bottom: 25px;
+      font-size: 15px;
+      font-weight: 600;
+      color: hsl(75, 94%, 57%);
+    }
+
+    #role{
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+
+    .container #info-div img{
+      border-radius: 100%;
+      width: 100px;
+    }
   </style>
 </head>
 <body>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+
+    <div id="info-div">
+      <img id="profile-img" src="assets/images/avatar-jessica.jpeg" alt="">
+      <p id="name">Jessica Randall</p>
+      <p id="place">London, United Kingdom</p>
+      <p id="role">"Front-end developer and avid reader."</p>
+    </div>
+
+    <div id="button-div">
+      <button>GitHub</button>
+      <button>Frontend Mentor</button>
+      <button>LinkedIn</button>
+      <button>Twitter</button>
+      <button>Instagram</button>
+    </div>
+    
   </div>
 </body>
 </html>
