@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <style>
+    body{
+      background-color: hsl(217, 54%, 11%);
+      color: white;
+      font-family: "Outfit",sans-serif;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: 100vh;
+      font-weight: 100;
+    }
+    .container{
+      width: 200px;
+      background-color: hsl(216, 50%, 16%);
+      padding: 20px;
+      border-radius: 10px ;
+      box-shadow: 0px 0px 300px 10px black;
+    }
+    .Equilibrium-image{
+      width: 200px;
+      border-radius: 10px;
+    }
+    .coin-name{
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .coin-info{
+      font-size: 12px;
+      color: hsl(215, 51%, 70%);
+    }
+    span{
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .duration-price{
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0px;
+    }
+    hr{
+      border: none;
+      height: 1px;
+      background-color: #e5e1e1;
+    }
+    .creator-info{
+      display: flex;
+      gap: 10px;
+    }
+    .creator-info > img{
+      width: 30px;
+      border-width: 1px;
+      border-color: white;
+      border-style: solid;
+      border-radius: 50%;
+    }
+    .creator-info > p{
+      font-size: 10px;
+    }
+    .date-left{
+      color: hsl(215, 51%, 70%);
+      font-weight: 600;
+    }
+    .coin-value{
+      font-weight: 600;
+      color:hsl(178, 100%, 50%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img class="Equilibrium-image" src="images/image-equilibrium.jpg" alt="">
+    <p class="coin-name">Equilibrium #3429</p>
+
+    <p class="coin-info">Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="duration-price">
+      <span class="coin-value"> <img src="images/icon-ethereum.svg" alt=""> 0.041 ETH</span>
+      <span class="date-left"><img src="images/icon-clock.svg" alt="">3 days left</span>
+    </div>
+    <hr>
+
+    <div class="creator-info">
+      <img src="images/image-avatar.png" alt="">
+      <p>Creation of <strong>Jules Wyvern</strong></p>
+    </div>
+  </div>
+</body>
+</html>
